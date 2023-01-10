@@ -7,6 +7,8 @@ let books = [];
 const findBooks = () => {
   if (localStorage.getItem('bookList') !== []) {
     books = JSON.parse(localStorage.getItem('bookList'));
+  } else {
+    books = [];
   }
   return books;
 };
