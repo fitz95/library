@@ -3,20 +3,15 @@ const form = document.getElementById('form');
 const removebtn = document.getElementsByClassName('removebtn');
 const newFormBook = document.getElementById('newFormBook');
 const newFormAuthor = document.getElementById('newFormAuthor');
-let books = [];
-const findBooks = () => {
-  if (localStorage.getItem('bookList') !== []) {
-    books = JSON.parse(localStorage.getItem('bookList'));
-  } else {
-    books = [];
-  }
-  return books;
-};
 
-function NewBook(title, author, id) {
-  this.title = title;
-  this.author = author;
-  this.id = id;
+let books = JSON.parse(localStorage.getItem('bookList')) || [];
+
+class NewBook {
+  constructor(title, author, id) {
+    this.title = title;
+    this.author = author;
+    this.id = id;
+  }
 }
 
 function addBook(title, author) {
@@ -63,7 +58,6 @@ const displayBooks = () => {
 };
 
 window.onload = () => {
-  findBooks();
   displayBooks();
 };
 

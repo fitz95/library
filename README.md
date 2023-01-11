@@ -133,7 +133,12 @@ You can deploy this project using Heroku, Netlify or any free hosting platform
 👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/fitz95/)
+- Twitter: [@twitterhandke](https://twitter.com/nsonggerald/)
+- linkedIn: [@linkedinhandle](https://www.linkedin.com/in/nsong-asoh/)
 
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/teitonny/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
