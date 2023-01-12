@@ -1,0 +1,62 @@
+body {
+  background-color: white;
+}
+
+main {
+  width: 60%;
+  margin: auto;
+}
+
+#bookListItems {
+  border: 2px solid black;
+}
+
+.listContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.listContainer:nth-of-type(odd) {
+  background-color: #d3d3d3;
+}
+
+.listContainer p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1px;
+}
+
+.listContainer button {
+  border: 2px solid black;
+  margin: 5px;
+  box-shadow: 5px 5px;
+}
+
+.formdiv {
+  width: 40%;
+  margin: auto;
+}
+
+input {
+  border: 2px solid black;
+  width: 100%;
+}
+
+hr {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  width: 40%;
+  text-align: center;
+}
+
+.formdiv h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.submitbtn {
+  float: right;
+}
