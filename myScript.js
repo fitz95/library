@@ -1,17 +1,10 @@
-/* eslint-disable max-classes-per-file */
+import NewBook from './NewBook.js';
+
 const bookList = document.getElementById('bookListItems');
 const form = document.getElementById('form');
 const removebtn = document.getElementsByClassName('removebtn');
 const newFormBook = document.getElementById('newFormBook');
 const newFormAuthor = document.getElementById('newFormAuthor');
-
-class NewBook {
-  constructor(title, author, id) {
-    this.title = title;
-    this.author = author;
-    this.id = id;
-  }
-}
 
 class Booklibrary {
   constructor() {
@@ -61,3 +54,10 @@ const booked = new Booklibrary();
 window.onload = () => {
   booked.displayBooks();
 };
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  booked.addBook(newFormBook.value, newFormAuthor.value);
+  form.reset();
+  booked.displayBooks();
+});
