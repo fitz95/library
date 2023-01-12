@@ -17,12 +17,19 @@ main {
   justify-content: space-between;
   border: 2px solid black;
   padding: 10px;
+  font-size: 20px;
+  flex-wrap: wrap;
 }
 
 .nav-items {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-container {
+  padding-bottom: 20px;
 }
 
 .class-list-items {
@@ -101,4 +108,19 @@ hr {
 .contact {
   width: 60%;
   margin: auto;
+}
+
+.my-footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#date {
+  margin-top: 2px;
+  float: right;
+  margin-bottom: 12px;
 }

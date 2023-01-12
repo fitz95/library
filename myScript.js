@@ -98,3 +98,7 @@ form.addEventListener('submit', (e) => {
   form.reset();
   booked.displayBooks();
 });
+
+const liveDate = new Date();
+const date = document.getElementById('date');
+date.innerHTML = liveDate.toUTCString();
