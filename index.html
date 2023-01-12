@@ -16,18 +16,19 @@
     <header></header>
     <main>
       <h1>Awesome Books</h1>
-      <section>
+      <section class="booklist-section">
         <div id="bookListItems"></div>
       </section>
-      <form id="form">
-        <input
-          type="text"
-          id="newFormAuthor"
-          placeholder="author"
-        /><br /><br />
-        <input type="text" id="newFormBook" placeholder="book" /><br /><br />
-        <button type="submit">Add</button>
-      </form>
+      <div class="formdiv">
+        <hr>
+        <h3>Add a  new book</h3>
+        <form id="form">
+          <input type="text" id="newFormBook" placeholder="Title" /><br /><br />
+          <input type="text" id="newFormAuthor" placeholder="author"/><br /><br />
+          <button type="submit" class="submitbtn">Add</button>
+        </form>
+      </div>
+      
     </main>
     <footer></footer>
     <script type="text/javascript" src="myScript.js"></script>
