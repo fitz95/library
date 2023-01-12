@@ -60,3 +60,12 @@ hr {
 .submitbtn {
   float: right;
 }
+
+.full {
+  height: 70vh;
+}
+
+.contact {
+  width: 60%;
+  margin: auto;
+}
