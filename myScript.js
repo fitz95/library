@@ -34,36 +34,30 @@ class Booklibrary {
     localStorage.setItem('bookList1', JSON.stringify(filteredBooks));
     return this.bookstorage;
   }
-}
-const booked = new Booklibrary();
 
-const displayBooks = () => {
-  bookList.innerHTML = '';
-  booked.bookstorage.forEach((book) => {
-    const { author, title, id } = book;
-    bookList.innerHTML += `
+  displayBooks() {
+    bookList.innerHTML = '';
+    this.bookstorage.forEach((book) => {
+      const { author, title, id } = book;
+      bookList.innerHTML += `
       <div class='listContainer'>
         <p>'${title}' by ${author}</p>
         <button id=${id} class='removebtn'>Remove</button>
       </div>
         `;
-  });
-
-  Array.from(removebtn).forEach((button) => {
-    button.addEventListener('click', (e) => {
-      booked.remove(e.target.id);
-      displayBooks();
     });
-  });
-};
+    Array.from(removebtn).forEach((button) => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.remove(e.target.id);
+        this.displayBooks();
+      });
+    });
+    return this.bookstorage;
+  }
+}
+const booked = new Booklibrary();
 
 window.onload = () => {
-  displayBooks();
+  booked.displayBooks();
 };
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  booked.addBook(newFormBook.value, newFormAuthor.value);
-  form.reset();
-  displayBooks();
-});
