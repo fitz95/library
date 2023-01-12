@@ -15,12 +15,30 @@
   <body>
     <header></header>
     <main>
-      <h1>Awesome Books</h1>
-      <section class="full booklist-section">
+      
+      <section class="nav-container">
+        <nav class="my-nav">
+          <div class="logo-wrapper">
+            <div class="log"> Awesome Books</div>
+          </div>
+          <div class="nav-list">
+            <ul class="nav-items">
+              <li class="class-list-items" id="List">List</li>
+              <li class="class-list-items" id="AddNew">Add new</li>
+              <li class="class-list-items" id="Contact">Contact</li>
+            </ul>
+          </div>
+        </nav>
+        
+      </section>
+
+      <section class="full booklist-section" id="bookList-section">
+
+        <h1 class="books-title"> <div> All awesome Books</div></h1>
         <div id="bookListItems"></div>
       </section>
 
-      <section class="full addBook">
+      <section class="full addBook" id="AddNewBook">
       <div class="formdiv">
         <hr>
         <h3>Add a  new book</h3>
@@ -32,7 +50,7 @@
       </div>
     </section>
 
-    <section class="full contact">
+    <section class="full contact" id="ContactSection">
       <h1>Contact Information</h1>
       <p>Do you have any questions or you just want to say 'Helllo'?</p><br>
       <p>You can reach to us</p>
@@ -46,6 +64,6 @@
       
     </main>
     <footer></footer>
-    <script type="text/javascript" src="myScript.js"></script>
+    <script type="module" src="myScript.js"></script>
   </body>
 </html>
