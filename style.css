@@ -1,0 +1,126 @@
+body {
+  background-color: white;
+}
+
+main {
+  width: 60%;
+  margin: auto;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.my-nav {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-container {
+  padding-bottom: 20px;
+}
+
+.class-list-items {
+  border-left: 2px solid black;
+  padding-left: 5px;
+}
+
+.class-list-items:hover {
+  color: blue;
+}
+
+.books-title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+#bookListItems {
+  border: 2px solid black;
+}
+
+.listContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.listContainer:nth-of-type(odd) {
+  background-color: #d3d3d3;
+}
+
+.listContainer p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1px;
+}
+
+.listContainer button {
+  border: 2px solid black;
+  margin: 5px;
+  box-shadow: 5px 5px;
+}
+
+.formdiv {
+  width: 40%;
+  margin: auto;
+}
+
+input {
+  border: 2px solid black;
+  width: 100%;
+}
+
+hr {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  width: 40%;
+  text-align: center;
+}
+
+.formdiv h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.submitbtn {
+  float: right;
+}
+
+.full {
+  height: 70vh;
+}
+
+.contact {
+  width: 60%;
+  margin: auto;
+}
+
+.my-footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5%;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#date {
+  margin-top: 2px;
+  float: right;
+  margin-bottom: 12px;
+}
